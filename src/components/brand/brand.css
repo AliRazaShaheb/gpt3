@@ -1,0 +1,16 @@
+.brand__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 200px;
+    flex-wrap: wrap;
+}
+.brand__container div{
+    margin: 1rem;
+    max-width: 150px;
+    min-width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

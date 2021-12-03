@@ -1,0 +1,123 @@
+.wgpt3__container{
+    min-height: 550px;
+    position: relative;
+    background: var(--color-blog);
+    overflow: hidden;
+    padding: 4rem;
+    font-family: var(--font-family);
+    z-index: 2;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5);
+}
+.wgpt3__container p{
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    color: var(--color-text);
+}
+
+.wgpt3__container .gradient1{
+    position: absolute;
+    width: 581px;
+    height: 410px;
+    left: -450px;
+    top: -350px;
+    background: #0F4279;
+    filter: blur(80px);
+    z-index: -1;
+    
+}
+
+.wgpt3__container .gradient2{
+    position: absolute;
+    width: 623px;
+    height: 558px;
+    bottom: -400px;
+    right: -400px;
+    background: #1B78DE;
+    filter: blur(120px);
+    z-index: -1;
+    
+
+}
+
+
+.wgpt3__container .wgpt3__contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 550px;
+    z-index: 100;
+    
+}
+.wgpt3__container .wgpt3__contents .head{
+    margin-bottom: 40px;
+}
+
+.wgpt3__container .wgpt3__contents .wgpt3__contents-top{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.wgpt3__container .wgpt3__contents .wgpt3__contents-center{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wgpt3__container .wgpt3__contents .wgpt3__contents-center p{
+    color:var(--color-subtext)
+}
+.wgpt3__container .wgpt3__contents .wgpt3__contents-center h1{
+    font-weight: 900;
+    width: 50%;
+    font-size: clamp(1.5rem, 3vw, 5rem);
+    margin: 20px 0;
+}
+.wgpt3__container .wgpt3__contents .wgpt3__contents-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.wgpt3__container .wgpt3__contents .wgpt3__contents-top .title{
+    flex: 3;
+}
+
+.wgpt3__container .wgpt3__contents .wgpt3__contents-top .desc{
+    flex: 7;
+}
+
+.wgpt3__container .wgpt3__contents .head{
+    font-weight: bold;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: #fff;
+}
+
+.wgpt3__container .wgpt3__contents .wgpt3__contents-bottom div:not(.line){
+    padding: 15px 15px 15px 0;
+}
+
+
+@media screen and (max-width:768px) {
+    .wgpt3__container{
+        padding: 2rem;
+    }
+    .wgpt3__container .wgpt3__contents .wgpt3__contents-top{
+        flex-direction: column;
+    }
+    .wgpt3__container .wgpt3__contents div{
+        flex-direction: column;
+    }
+    .wgpt3__container .wgpt3__contents .wgpt3__contents-center{
+        align-items: flex-start;
+    }
+    .wgpt3__container .wgpt3__contents .wgpt3__contents-center h1{
+        width: 100%;
+    }
+    .wgpt3__container .wgpt3__contents .head{
+        margin-bottom: 20px;
+    }
+}
+
